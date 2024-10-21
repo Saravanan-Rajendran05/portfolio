@@ -1,0 +1,252 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0A0A0A;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1A1A1A;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: #FFD700;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('assets/images/hero-bg.jpg') center/cover no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    padding: 10px 30px;
+    background-color: #FFD700;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #E6C200;
+}
+
+/* About Section */
+.about {
+    padding: 100px 20px;
+    background-color: #1A1A1A;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #F2F2F2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+.skills {
+    padding: 100px 20px;
+    background-color: #0A0A0A;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    color: #FFD700;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: #1A1A1A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.1rem;
+    color: #FFD700;
+}
+
+/* Projects Section */
+.projects {
+    padding: 100px 20px;
+    background-color: #1A1A1A;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    color: #FFD700;
+    margin-bottom: 40px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #0A0A0A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #FFD700;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #F2F2F2;
+}
+
+/* Contact Section */
+.contact {
+    padding: 100px 20px;
+    background-color: #0A0A0A;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #FFD700;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    padding: 10px 30px;
+    background-color: #FFD700;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #E6C200;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #1A1A1A;
+    text-align: center;
+    color: #FFD700;
+}
+
+footer p {
+    font-size: 1rem;
+}
